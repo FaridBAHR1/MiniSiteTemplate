@@ -13,6 +13,7 @@
 
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     <link href="css/site.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/f4 (3).png">
 
 </head>
@@ -53,8 +54,23 @@
 
     <!-- Main Section -->
     <main class="flex-shrink-0">
-        <div class="container">
-
+        <div class="container py-5 px-5 mt-5">
+            <h1 class="border-1 border-bottom border-dark">[Application]'s Code</h1>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        //Call function
+                        function Application_Main(){
+                            alert("Main Function");
+                        }
+                    </code></pre>
+                </div>
+                <div class="col-lg-4">
+                    <p>Code structures in 1 function</p>
+                    <h5>Back problems</h5>
+                    <p>Alerts when you have back problems</p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -86,7 +102,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src="js/site.js"></script>
+    <script src="js/prism.js"></script>
+    <script>
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+            })
+    </script>
 </body>
 
 </html>
